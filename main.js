@@ -1,8 +1,8 @@
 /* A Little Universe for You — no framework or backend needed. */
 /* Personalize these two values before sending your gift. */
 const BIRTHDAY = {
-  recipientName: "teman baikku",
-  senderName: "seorang teman"
+  recipientName: "Asri",
+  senderName: "teman (?)"
 };
 
 const ART = {
