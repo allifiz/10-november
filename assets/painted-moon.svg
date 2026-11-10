@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="The gentle moon, painted in watercolor">
+<defs>
+ <linearGradient id="night" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#171d45"/><stop offset=".38" stop-color="#474a82"/><stop offset=".78" stop-color="#827aaf"/><stop offset="1" stop-color="#b9a0bd"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#f7e4ad" stop-opacity=".59"/><stop offset=".25" stop-color="#e8c89b" stop-opacity=".3"/><stop offset="1" stop-color="#f5dbb2" stop-opacity="0"/></radialGradient>
+ <linearGradient id="crescent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff6d9"/><stop offset=".58" stop-color="#ebd39f"/><stop offset="1" stop-color="#c39d79"/></linearGradient>
+ <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5d6597"/><stop offset=".4" stop-color="#414b7e"/><stop offset="1" stop-color="#182c53"/></linearGradient>
+ <linearGradient id="reflection" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f0d8ad" stop-opacity="0"/><stop offset=".5" stop-color="#fbe4b8" stop-opacity=".8"/><stop offset="1" stop-color="#f0d8ad" stop-opacity="0"/></linearGradient>
+ <mask id="moonMask"><rect width="800" height="1000" fill="black"/><circle cx="398" cy="338" r="143" fill="white"/><circle cx="471" cy="272" r="145" fill="black"/></mask>
+ <filter id="blur"><feGaussianBlur stdDeviation="32"/></filter>
+ <filter id="wash" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="2" seed="6" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="14"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".61" numOctaves="3" seed="14" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<rect width="800" height="1000" fill="url(#night)"/>
+<!-- diffused pigment -->
+<g filter="url(#blur)" opacity=".57">
+ <ellipse cx="73" cy="157" rx="185" ry="204" fill="#2b3b7b"/>
+ <ellipse cx="760" cy="297" rx="208" ry="249" fill="#8679bc"/>
+ <ellipse cx="118" cy="577" rx="245" ry="119" fill="#b2a2c9"/>
+ <ellipse cx="594" cy="565" rx="258" ry="117" fill="#d2aac0"/>
+</g>
+<!-- moonlight -->
+<circle cx="411" cy="314" r="316" fill="url(#glow)"/>
+<circle cx="398" cy="338" r="143" fill="url(#crescent)" mask="url(#moonMask)" filter="url(#wash)"/>
+<path d="M292 431c-30-36-49-80-49-122 0-69 52-132 110-147" stroke="#fff4d4" stroke-width="5" stroke-linecap="round" fill="none" opacity=".4"/>
+<!-- dreamy sky watercolor bands -->
+<g fill="none" stroke-linecap="round" filter="url(#wash)">
+ <path d="M-77 184C62 71 207 167 300 93c91-72 232-68 348-6" stroke="#8f8fc4" stroke-width="35" opacity=".34"/>
+ <path d="M-39 507c101-45 200-62 300-17 85 38 221 18 298-27 78-45 174-39 275 0" stroke="#e4c6ce" stroke-width="30" opacity=".35"/>
+ <path d="M-64 587c141-78 268-61 387-32 119 28 293 11 490-52" stroke="#d7c5d8" stroke-width="18" opacity=".27"/>
+ <path d="M508 147c103-47 202-29 310 47" stroke="#beb0d4" stroke-width="31" opacity=".28"/>
+</g>
+<!-- night stars -->
+<g fill="#f6e5bd">
+ <circle cx="105" cy="160" r="3.6"/><circle cx="206" cy="89" r="2.3"/><circle cx="300" cy="131" r="3"/><circle cx="646" cy="131" r="3"/><circle cx="729" cy="275" r="3"/><circle cx="637" cy="403" r="2.7"/><circle cx="167" cy="413" r="3.5"/><circle cx="93" cy="339" r="2"/><circle cx="279" cy="565" r="2.8"/><circle cx="698" cy="531" r="2.5"/><circle cx="499" cy="546" r="2"/>
+</g>
+<g stroke="#f9eaca" stroke-width="3" stroke-linecap="round">
+ <path d="M148 253v29m-14-14h28M646 232v35m-17-17h34M567 98v25m-12-12h24M699 435v27m-13-13h26M248 485v20m-10-10h20"/>
+</g>
+<g fill="#f6e0bc" opacity=".55">
+ <circle cx="67" cy="85" r="1.8"/><circle cx="249" cy="201" r="1.8"/><circle cx="537" cy="468" r="2.2"/><circle cx="750" cy="94" r="1.5"/><circle cx="42" cy="472" r="2"/><circle cx="343" cy="71" r="1.6"/><circle cx="592" cy="584" r="2.2"/>
+</g>
+<!-- fuzzy cloud banks and sea -->
+<path d="M0 641c115-67 192-43 299-10 104 32 177-50 305-32 75 11 143 60 196 25v376H0Z" fill="#797da7" opacity=".48" filter="url(#wash)"/>
+<path d="M0 680c121-37 250-24 354-7 141 24 271-33 446-17v344H0Z" fill="url(#ocean)" filter="url(#wash)"/>
+<path d="M0 720c115-19 215-25 340-11 141 18 307 12 460-15" fill="none" stroke="#a1a0c4" stroke-width="11" opacity=".32"/>
+<g stroke="url(#reflection)" stroke-linecap="round" fill="none">
+ <path d="M301 728h214" stroke-width="9"/><path d="M348 753h156" stroke-width="7"/><path d="M307 781h241" stroke-width="7"/><path d="M359 816h146" stroke-width="8"/><path d="M281 846h288" stroke-width="7"/><path d="M341 888h165" stroke-width="8"/><path d="M305 925h247" stroke-width="6"/>
+</g>
+<!-- sea ripples -->
+<g stroke="#b5b1ce" opacity=".38" fill="none" stroke-width="4" stroke-linecap="round">
+ <path d="M-10 754c66-5 95-3 143 0M603 773c69-4 132-3 215-11M47 832c47-3 99-4 168-3M622 873c57-3 124-4 209-12M-4 908c98-6 159-4 249 4M551 939c71-7 128-5 196-7"/>
+</g>
+<!-- crescent reflection blooming into painted flowers -->
+<g stroke="#d4b8bc" fill="none" stroke-linecap="round" opacity=".7">
+ <path d="M98 1010c5-69-2-130-16-175m18 115c16-24 29-31 41-34m-43-23c-18-23-34-29-47-32" stroke-width="3"/>
+ <path d="M722 1009c-5-82 5-130 20-181m-20 135c-17-30-34-38-50-44m61-37c15-19 28-26 42-29" stroke-width="3"/>
+ <path d="M220 1006c-10-47-13-84-7-115m8 77c21-21 33-22 45-23" stroke-width="2.4"/>
+</g>
+<g fill="#dbb1c6" opacity=".8">
+ <ellipse cx="82" cy="828" rx="12" ry="20" transform="rotate(-30 82 828)"/>
+ <ellipse cx="52" cy="861" rx="10" ry="17" transform="rotate(34 52 861)"/>
+ <ellipse cx="742" cy="829" rx="12" ry="20" transform="rotate(23 742 829)"/>
+ <ellipse cx="672" cy="919" rx="11" ry="16" transform="rotate(-42 672 919)"/>
+ <ellipse cx="212" cy="893" rx="9" ry="15" transform="rotate(24 212 893)"/>
+</g>
+<g fill="#fae4b6"><circle cx="81" cy="832" r="4"/><circle cx="744" cy="832" r="4"/><circle cx="212" cy="891" r="3"/></g>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".12" style="mix-blend-mode:soft-light"/>
+<rect x="10" y="10" width="780" height="980" stroke="#fff0d8" stroke-opacity=".14" stroke-width="2" fill="none"/>
+</svg>
