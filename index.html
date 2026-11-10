@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b36">
+  <meta name="description" content="Sebuah semesta kecil, dilukis khusus untuk hari ulang tahunmu.">
+  <title>A Little Universe for You ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Langsung ke cerita</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top" aria-label="Kembali ke awal"><span class="brand-star" aria-hidden="true">✳</span> <span>a little universe</span></a>
+    <div class="header-actions">
+      <span class="header-date">10 NOVEMBER <span aria-hidden="true">✦</span> A BIRTHDAY STORY</span>
+      <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Nyalakan suara ambience" aria-pressed="false">
+        <span class="sound-icon" aria-hidden="true">♫</span><span id="sound-label">sound off</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero night-section" id="top" aria-labelledby="hero-title">
+      <div class="hero-stars" id="hero-stars" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner layout-container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow light-eyebrow"><span class="small-line"></span> A SMALL GIFT FOR YOU</p>
+          <h1 id="hero-title">A little<br>universe,<br><em>just for you.</em></h1>
+          <div class="hero-desc">
+            <span class="mini-asterisk" aria-hidden="true">✧</span>
+            <p>Untuk seseorang yang menyukai bulan, langit, dan hal-hal indah yang kadang luput dari pandangan.</p>
+          </div>
+          <a class="round-cta" href="#invitation"><span>Mulai perjalanan</span><span class="cta-circle" aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-art-wrap reveal" id="hero-art-wrap">
+          <div class="hero-art-halo" aria-hidden="true"></div>
+          <div class="hero-art-frame">
+            <img src="./assets/painted-sky.svg" alt="Ilustrasi watercolor langit malam biru, bulan keemasan, bintang, dan perbukitan" fetchpriority="high">
+          </div>
+          <span class="hero-art-label">a sky painted with good wishes</span>
+          <span class="hero-sparkle spark-one" aria-hidden="true">✳</span>
+          <span class="hero-sparkle spark-two" aria-hidden="true">✦</span>
+          <span class="hero-sparkle spark-three" aria-hidden="true">✧</span>
+        </div>
+      </div>
+      <div class="hero-bottom layout-container">
+        <span>MADE WITH A LITTLE MAGIC</span>
+        <a href="#invitation" aria-label="Gulir ke cerita berikutnya"><span>SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></a>
+        <span>EST. NOVEMBER 10</span>
+      </div>
+      <div class="hero-edge" aria-hidden="true"></div>
+    </section>
+
+    <section class="invitation paper-section" id="invitation" aria-labelledby="invitation-title">
+      <div class="decorative-mark" aria-hidden="true">✴</div>
+      <div class="invitation-inner reveal">
+        <p class="eyebrow ink-eyebrow">PROLOGUE <span aria-hidden="true">·</span> A NOTE BEFORE WE BEGIN</p>
+        <h2 id="invitation-title">Not every gift<br>needs a <em>ribbon.</em></h2>
+        <div class="brush-underline" aria-hidden="true"></div>
+        <p>Beberapa hadiah hanya butuh sedikit warna, secuil cahaya bulan, dan harapan-harapan baik. Jadi, anggap saja halaman ini sebuah galeri kecil yang dibuat untuk merayakan <strong>hadirmu di dunia.</strong></p>
+        <span class="invitation-doodle" aria-hidden="true">✧ &nbsp; ✦ &nbsp; ✧</span>
+      </div>
+    </section>
+
+    <section class="gallery paper-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="layout-container">
+        <div class="section-heading reveal">
+          <p class="eyebrow ink-eyebrow">CHAPTER 01 <span aria-hidden="true">/</span> THE LITTLE GALLERY</p>
+          <h2 id="gallery-title">A few paintings,<br><em>a few good wishes.</em></h2>
+          <p>Setiap lukisan menyimpan satu pesan kecil. Ketuk salah satunya untuk membuka.</p>
+        </div>
+        <div class="art-grid">
+          <article class="art-card reveal">
+            <button class="art-visual art-button" type="button" data-art="stars" aria-label="Buka pesan lukisan The Starry Dreams">
+              <img src="./assets/painted-sky.svg" alt="Lukisan langit malam berbintang dan bulan di atas bukit" loading="lazy">
+              <span class="art-open-icon" aria-hidden="true">↗</span>
+            </button>
+            <div class="art-card-caption"><span class="art-number">NO. 01 / THE SKY</span><h3>The Starry Dreams</h3><button class="text-link" type="button" data-art="stars">Lihat pesan <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="art-card reveal">
+            <button class="art-visual art-button" type="button" data-art="garden" aria-label="Buka pesan lukisan The Secret Garden">
+              <img src="./assets/painted-garden.svg" alt="Lukisan watercolor taman bunga pastel di bawah cahaya senja" loading="lazy">
+              <span class="art-open-icon" aria-hidden="true">↗</span>
+            </button>
+            <div class="art-card-caption"><span class="art-number">NO. 02 / THE GARDEN</span><h3>The Secret Garden</h3><button class="text-link" type="button" data-art="garden">Lihat pesan <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="art-card reveal">
+            <button class="art-visual art-button" type="button" data-art="moon" aria-label="Buka pesan lukisan The Gentle Moon">
+              <img src="./assets/painted-moon.svg" alt="Lukisan watercolor bulan emas bersinar di langit ungu-biru" loading="lazy">
+              <span class="art-open-icon" aria-hidden="true">↗</span>
+            </button>
+            <div class="art-card-caption"><span class="art-number">NO. 03 / THE MOON</span><h3>The Gentle Moon</h3><button class="text-link" type="button" data-art="moon">Lihat pesan <span aria-hidden="true">↗</span></button></div>
+          </article>
+        </div>
+        <p class="gallery-note reveal">A LITTLE COLLECTION OF THINGS WORTH WISHING FOR <span aria-hidden="true">✳</span></p>
+      </div>
+    </section>
+
+    <section class="constellation night-section" id="constellation" aria-labelledby="constellation-title">
+      <div class="constellation-stars" id="constellation-stars" aria-hidden="true"></div>
+      <div class="layout-container constellation-layout">
+        <div class="constellation-copy reveal">
+          <p class="eyebrow light-eyebrow">CHAPTER 02 <span aria-hidden="true">/</span> LITTLE CONSTELLATIONS</p>
+          <h2 id="constellation-title">Some wishes<br>belong to <em>stars.</em></h2>
+          <p>Di antara banyaknya bintang, ada tiga yang menyimpan harapan untukmu. Coba sentuh satu per satu.</p>
+          <div class="star-note" id="star-note" role="status" aria-live="polite">
+            <span class="star-note-symbol" aria-hidden="true">✧</span>
+            <span id="star-note-text">Pilih sebuah bintang untuk membaca pesannya.</span>
+          </div>
+          <div class="star-counter" id="star-counter">0 OF 3 STARS DISCOVERED</div>
+        </div>
+        <div class="star-map reveal" aria-label="Peta tiga bintang interaktif">
+          <svg class="constellation-lines" viewBox="0 0 600 570" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M118 390 L300 160 L467 320 L118 390" fill="none" stroke="#dccc9e" stroke-width="1" stroke-dasharray="4 9" opacity=".55"/>
+            <path d="M300 160 L388 64 M467 320 L535 434 M118 390 L45 488" fill="none" stroke="#dccc9e" stroke-width=".8" opacity=".25"/>
+          </svg>
+          <div class="star-map-moon" aria-hidden="true"></div>
+          <button class="map-star map-star-one" type="button" data-star="courage" aria-label="Buka bintang Keberanian"><span class="star-core" aria-hidden="true">✦</span><span class="map-star-label">COURAGE</span></button>
+          <button class="map-star map-star-two" type="button" data-star="peace" aria-label="Buka bintang Ketenangan"><span class="star-core" aria-hidden="true">✦</span><span class="map-star-label">PEACE</span></button>
+          <button class="map-star map-star-three" type="button" data-star="joy" aria-label="Buka bintang Kebahagiaan"><span class="star-core" aria-hidden="true">✦</span><span class="map-star-label">JOY</span></button>
+          <span class="map-coordinate" aria-hidden="true">THE UNIVERSE / 10 NOV</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter-section paper-section" id="letter" aria-labelledby="letter-title">
+      <div class="layout-container letter-layout">
+        <div class="letter-intro reveal">
+          <p class="eyebrow ink-eyebrow">CHAPTER 03 <span aria-hidden="true">/</span> A LETTER FOR YOU</p>
+          <h2 id="letter-title">A letter,<br><em>under the moon.</em></h2>
+          <p>Karena beberapa hal lebih enak disampaikan lewat surat kecil daripada sekadar pesan singkat.</p>
+          <div class="letter-ornament" aria-hidden="true">☾ <span>✦</span></div>
+        </div>
+        <div class="letter-envelope reveal" id="letter-envelope">
+          <div class="letter-paper">
+            <span class="letter-stamp" aria-hidden="true">✳</span>
+            <span class="letter-topline">A SMALL LETTER • NOVEMBER 10</span>
+            <div class="letter-hidden" id="letter-hidden" aria-hidden="true">
+              <p class="letter-greeting">Dear <span data-recipient>you</span>,</p>
+              <p>Selamat ulang tahun!</p>
+              <p>Semoga kamu selalu menemukan hal-hal indah, bahkan di hari yang terasa biasa saja. Semoga rasa penasaranmu tidak pernah habis, mimpi-mimpimu mendapat tempat untuk tumbuh, dan kamu dikelilingi orang-orang yang membuatmu nyaman menjadi diri sendiri.</p>
+              <p>Terus nikmati karya seni, langit malam, dan semua hal kecil yang membuat hidup terasa lebih berwarna.</p>
+              <p>Terima kasih sudah menjadi bagian dari dunia ini. Semoga tahun barumu menyenangkan, dengan caramu sendiri.</p>
+              <p class="letter-signoff">With warm wishes,<br><em data-sender>your friend</em> <span aria-hidden="true">✧</span></p>
+            </div>
+            <div class="letter-cover" id="letter-cover">
+              <span class="letter-cover-label">a little note, just for you</span>
+              <button type="button" class="wax-seal" id="open-letter" aria-label="Buka surat ulang tahun"><span aria-hidden="true">✳</span></button>
+              <span class="letter-cover-hint">TAP THE SEAL TO UNFOLD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wish-section" id="wish" aria-labelledby="wish-title">
+      <div class="wish-orb" aria-hidden="true"></div>
+      <div class="wish-particles" id="wish-particles" aria-hidden="true"></div>
+      <div class="wish-content reveal">
+        <p class="eyebrow ink-eyebrow">CHAPTER 04 <span aria-hidden="true">/</span> A WISH UPON A STAR</p>
+        <span class="wish-moon" aria-hidden="true">☾</span>
+        <h2 id="wish-title">Make a <em>little wish.</em></h2>
+        <p>Kalau boleh menitipkan satu harapan kepada langit, kira-kira apa yang ingin kamu sampaikan?</p>
+        <form id="wish-form" class="wish-form">
+          <label class="visually-hidden" for="wish-input">Harapan ulang tahunmu</label>
+          <input id="wish-input" name="wish" type="text" maxlength="160" placeholder="Tuliskan satu harapan kecil..." autocomplete="off" required>
+          <button type="submit">Kirim ke bintang <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="wish-helper" id="wish-feedback" aria-live="polite">Harapanmu hanya tersimpan di browser perangkat ini, bukan dikirim ke server.</p>
+      </div>
+    </section>
+
+    <section class="finale night-section" id="finale" aria-labelledby="finale-title">
+      <div class="finale-art" aria-hidden="true"></div>
+      <div class="finale-vignette" aria-hidden="true"></div>
+      <div class="finale-content reveal">
+        <p class="eyebrow light-eyebrow">THE LAST CHAPTER <span aria-hidden="true">✦</span> THE BEGINNING OF ANOTHER YEAR</p>
+        <span class="finale-symbol" aria-hidden="true">✧</span>
+        <h2 id="finale-title">The world is a little<br>more <em>colorful</em> with you in it.</h2>
+        <div class="finale-divider" aria-hidden="true"><span>✦</span></div>
+        <p>Selamat ulang tahun, <span data-recipient>you</span>.<br>Semoga tahun ini seindah semua hal yang kamu sukai.</p>
+        <button class="download-btn" type="button" id="download-art">Simpan lukisan kecilmu <span aria-hidden="true">↓</span></button>
+        <p class="download-status" id="download-status" role="status"></p>
+      </div>
+      <div class="finale-bottom"><span>PAINTED WITH GOOD WISHES</span><span>✳</span><span>JUST FOR YOU</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a href="#top">BACK TO THE STARS ↑</a><span>A LITTLE UNIVERSE • MADE FOR NOVEMBER 10</span></footer>
+
+  <dialog class="art-dialog" id="art-dialog" aria-labelledby="dialog-title">
+    <form method="dialog"><button class="dialog-close" aria-label="Tutup pesan" type="submit">×</button></form>
+    <div class="dialog-layout">
+      <img id="dialog-image" src="./assets/painted-sky.svg" alt="">
+      <div class="dialog-copy">
+        <p class="eyebrow ink-eyebrow" id="dialog-chapter">A LITTLE WISH</p>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-message"></p>
+        <span class="dialog-signature">a wish, painted for you <span aria-hidden="true">✧</span></span>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
