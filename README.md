@@ -29,38 +29,38 @@ Repo ini merupakan website **HTML/CSS/JavaScript murni**, jadi tidak memerlukan 
 
 Buka file **main.js** dan ubah objek di bagian paling atas:
 
-\`\`\`js
+```js
 const BIRTHDAY = {
   recipientName: "nama temanmu",
   senderName: "namamu"
 };
-\`\`\`
+```
 
-Nama akan muncul otomatis pada surat dan halaman penutup, termasuk gambar PNG yang diunduh. Isi pesan lukisan dapat diedit pada objek \`ART\`; pesan bintang pada \`STARS\`. Surat utama berada di \`index.html\`, bagian \`letter-hidden\`.
+Nama akan muncul otomatis pada surat dan halaman penutup, termasuk gambar PNG yang diunduh. Isi pesan lukisan dapat diedit pada objek `ART`; pesan bintang pada `STARS`. Surat utama berada di `index.html`, bagian `letter-hidden`.
 
-> Desain ini dibuat untuk tanggal **10 November**. Jika tanggalnya berbeda, ubah teks tanggal yang muncul di \`index.html\`, \`main.js\` (pada PNG), dan \`README.md\`.
+> Desain ini dibuat untuk tanggal **10 November**. Jika tanggalnya berbeda, ubah teks tanggal yang muncul di `index.html`, `main.js` (pada PNG), dan `README.md`.
 
 ## 🧪 Tes lokal
 
 Cukup jalankan server statis dari root proyek:
 
-\`\`\`bash
+```bash
 python3 -m http.server 8080
-\`\`\`
+```
 
 Lalu buka **http://localhost:8080**.
 
-Jangan mengandalkan \`file://\` untuk fitur **download PNG** karena pengamanan browser sering memblokir pemuatan aset ke canvas dari file lokal. Gunakan localhost atau GitHub Pages.
+Jangan mengandalkan `file://` untuk fitur **download PNG** karena pengamanan browser sering memblokir pemuatan aset ke canvas dari file lokal. Gunakan localhost atau GitHub Pages.
 
 ## 🔐 Privasi
 
-Fitur wish tidak mengirimkan input ke server. Wish disimpan menggunakan \`localStorage\` **di browser yang sama saja**, bukan dibagikan ke perangkat lain dan bukan disimpan publik. Jika data browser dihapus, wish ikut hilang.
+Fitur wish tidak mengirimkan input ke server. Wish disimpan menggunakan `localStorage` **di browser yang sama saja**, bukan dibagikan ke perangkat lain dan bukan disimpan publik. Jika data browser dihapus, wish ikut hilang.
 
 Website ini tidak mengumpulkan data lewat backend. Font dimuat dari Google Fonts dan merupakan satu-satunya ketergantungan jaringan eksternal; jika offline, browser memakai font fallback.
 
 ## 🗂️ Struktur
 
-\`\`\`text
+```text
 .
 ├── index.html
 ├── style.css
@@ -70,6 +70,6 @@ Website ini tidak mengumpulkan data lewat backend. Font dimuat dari Google Fonts
 │   ├── painted-garden.svg
 │   └── painted-moon.svg
 └── README.md
-\`\`\`
+```
 
-Ilustrasi dalam folder \`assets\` merupakan SVG orisinal yang dibuat untuk proyek ini. Tidak diperlukan izin atau hotlink gambar pihak ketiga.
+Ilustrasi dalam folder `assets` merupakan SVG orisinal yang dibuat untuk proyek ini. Tidak diperlukan izin atau hotlink gambar pihak ketiga.
