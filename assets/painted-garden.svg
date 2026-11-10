@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="An enchanted watercolor garden">
+<defs>
+ <linearGradient id="background" x1=".1" y1="0" x2=".85" y2="1"><stop stop-color="#6c779e"/><stop offset=".36" stop-color="#c4abc2"/><stop offset=".7" stop-color="#eac7be"/><stop offset="1" stop-color="#efd9b5"/></linearGradient>
+ <radialGradient id="sun"><stop stop-color="#fff4cc"/><stop offset=".28" stop-color="#f6dba7" stop-opacity=".7"/><stop offset="1" stop-color="#f3ceaa" stop-opacity="0"/></radialGradient>
+ <linearGradient id="field" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7c8e87"/><stop offset=".5" stop-color="#607c7e"/><stop offset="1" stop-color="#334b60"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="31"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="7"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".57" numOctaves="3" seed="12" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+ <filter id="wash" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="2" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="12"/></filter>
+ <g id="flower"><path d="M0 55Q-4 12 0-15" stroke="#536e69" stroke-width="4" fill="none"/><path d="M-1 28q-20-15-25-7Q-20 41-1 35M0 13q19-17 28-11Q20 23 0 23" fill="#6f9a82" opacity=".83"/><g fill="#cf96aa" opacity=".94"><ellipse cx="0" cy="-35" rx="11" ry="26"/><ellipse cx="0" cy="-35" rx="11" ry="26" transform="rotate(60 0 -35)"/><ellipse cx="0" cy="-35" rx="11" ry="26" transform="rotate(120 0 -35)"/></g><circle cx="0" cy="-35" r="9" fill="#f5d8a2"/></g>
+ <g id="tinyflower"><path d="M0 15q-2-33 0-55" stroke="#5c7977" stroke-width="3" fill="none"/><g fill="#e6d1d7"><ellipse cx="0" cy="-41" rx="7" ry="15"/><ellipse cx="0" cy="-41" rx="7" ry="15" transform="rotate(72 0 -41)"/><ellipse cx="0" cy="-41" rx="7" ry="15" transform="rotate(144 0 -41)"/></g><circle cx="0" cy="-41" r="5" fill="#f4dca9"/></g>
+</defs>
+<rect width="800" height="1000" fill="url(#background)"/>
+<!-- airy watercolor pigment clouds -->
+<g opacity=".52" filter="url(#blur)">
+ <ellipse cx="35" cy="255" rx="215" ry="125" fill="#9da4cf"/><ellipse cx="685" cy="215" rx="230" ry="140" fill="#bd9ec1"/>
+ <ellipse cx="350" cy="490" rx="340" ry="112" fill="#f9e8c8"/><ellipse cx="685" cy="630" rx="165" ry="140" fill="#e0aaa7"/>
+ <ellipse cx="50" cy="640" rx="195" ry="135" fill="#a2ac9b"/>
+</g>
+<circle cx="515" cy="275" r="230" fill="url(#sun)"/>
+<circle cx="515" cy="275" r="91" fill="#f9e9c5" opacity=".75"/>
+<circle cx="515" cy="275" r="84" fill="#faf0d5" opacity=".42"/>
+<!-- flow of clouds -->
+<g stroke-linecap="round" fill="none" filter="url(#wash)">
+ <path d="M-40 233C115 139 183 203 275 180s206-96 331-48 167 57 223 33" stroke="#e9d8de" stroke-width="38" opacity=".39"/>
+ <path d="M-40 350c170-73 264-13 402-76 108-49 253-40 470 32" stroke="#f4e9df" stroke-width="26" opacity=".35"/>
+ <path d="M-51 452c129-49 221-43 341-4 103 32 248-10 329-33" stroke="#fff0db" stroke-width="25" opacity=".38"/>
+ <path d="M-33 554c125 24 207 56 326 11 99-39 211-33 317 16" stroke="#d5b0c1" stroke-width="29" opacity=".3"/>
+</g>
+<!-- distant garden -->
+<path d="M0 619c89-38 168-18 245-55 107-51 164-17 243 16 109 46 182-10 312 18v402H0Z" fill="#a1ab9a" opacity=".65" filter="url(#wash)"/>
+<path d="M0 694c113-42 204-6 304-32 112-29 238-22 321 0 78 21 123-5 175-16v354H0Z" fill="#7f9d98" opacity=".67" filter="url(#wash)"/>
+<path d="M0 751c166-22 254 17 377-16 143-39 288-4 423-19v284H0Z" fill="url(#field)" filter="url(#wash)"/>
+<!-- winding pale path -->
+<path d="M468 735c-30 76-51 94-23 137 15 23 47 64 45 128H294c31-78 56-137 35-177-15-32-2-64 20-92" fill="#e9d1b5" opacity=".62" filter="url(#wash)"/>
+<path d="M455 756c-49 55-69 110-48 135" stroke="#fff1d3" stroke-width="13" stroke-linecap="round" fill="none" opacity=".4"/>
+<!-- distant flowers -->
+<g opacity=".54">
+ <use href="#tinyflower" transform="translate(75 717) scale(.65)"/><use href="#tinyflower" transform="translate(169 692) scale(.65)"/>
+ <use href="#tinyflower" transform="translate(282 718) scale(.6)"/><use href="#tinyflower" transform="translate(584 709) scale(.69)"/><use href="#tinyflower" transform="translate(706 696) scale(.72)"/>
+</g>
+<!-- wildflower silhouettes -->
+<g filter="url(#wash)">
+ <use href="#flower" transform="translate(65 889) scale(1.28) rotate(-12)"/>
+ <use href="#flower" transform="translate(158 835) scale(.92) rotate(14)"/>
+ <use href="#flower" transform="translate(238 919) scale(1.36) rotate(-6)"/>
+ <use href="#flower" transform="translate(540 875) scale(1.15) rotate(9)"/>
+ <use href="#flower" transform="translate(646 845) scale(.94) rotate(-15)"/>
+ <use href="#flower" transform="translate(755 932) scale(1.48) rotate(11)"/>
+ <use href="#tinyflower" transform="translate(104 984) scale(1.8)"/>
+ <use href="#tinyflower" transform="translate(317 975) scale(1.35)"/>
+ <use href="#tinyflower" transform="translate(588 974) scale(1.43)"/>
+ <use href="#tinyflower" transform="translate(704 995) scale(1.6)"/>
+</g>
+<!-- stray flower petals -->
+<g fill="#efc9c7" opacity=".75">
+ <ellipse cx="94" cy="437" rx="8" ry="14" transform="rotate(-25 94 437)"/>
+ <ellipse cx="190" cy="513" rx="6" ry="11" transform="rotate(41 190 513)"/>
+ <ellipse cx="680" cy="433" rx="7" ry="12" transform="rotate(35 680 433)"/>
+ <ellipse cx="737" cy="562" rx="7" ry="13" transform="rotate(-28 737 562)"/>
+ <ellipse cx="408" cy="621" rx="6" ry="10" transform="rotate(65 408 621)"/>
+</g>
+<!-- fireflies -->
+<g fill="#fff4c9">
+ <circle cx="147" cy="323" r="3"/><circle cx="240" cy="438" r="2.5"/><circle cx="610" cy="383" r="3.5"/><circle cx="692" cy="301" r="3"/><circle cx="340" cy="336" r="2.5"/><circle cx="746" cy="494" r="2.5"/><circle cx="95" cy="580" r="3"/>
+</g>
+<g stroke="#fff1ce" stroke-width="2.5" stroke-linecap="round" opacity=".75">
+ <path d="M175 278v22m-11-11h22M635 460v22m-11-11h22M329 534v18m-9-9h18M757 367v18m-9-9h18"/>
+</g>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".14" style="mix-blend-mode:soft-light"/>
+<rect x="10" y="10" width="780" height="980" stroke="#fff7e2" stroke-opacity=".18" stroke-width="2" fill="none"/>
+</svg>
